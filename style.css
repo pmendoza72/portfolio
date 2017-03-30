@@ -1,0 +1,127 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding: 0 15px;
+}
+
+img {
+  width: 100%;
+}
+
+div {
+  font-size: 1em;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 3px solid #432F21;
+  margin-bottom: 40px;
+}
+
+nav {
+  background: #2f2e2f;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.5em;
+  height: 40px;
+}
+
+nav li {
+  display: inline;
+  font-size: 1em;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: flex-start;
+  padding: 30px 20px;
+}
+
+section {
+  border: 2px dashed #837217;
+  padding: 8px;
+  margin: 15px 10px;
+}
+
+footer {
+  background: #432F21;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 70px;
+  margin-top: 50px;
+}
+
+h2,  h3, h4 {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-left: 15px;
+  line-height: 1.5em;
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 640px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .icon-menu {
+    display: none;
+  }
+}
