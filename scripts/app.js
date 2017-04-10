@@ -1,46 +1,30 @@
 'use strict'
 
-var projects = [];
+var projects = [
+  {
+    projectName: 'Salmon Cookies',
+    projectUrl: 'https://pmendoza72.github.io/cookie-stand/',
+    projectImageUrl: 'img/salmon-cookie-tn.png',
+    projectDescription: 'HTML table dynamically populated using JavaScript including form that adds to table.'
+  },
+  {
+    projectName: 'BlackJack',
+    projectUrl: 'https://pmendoza72.github.io/201-Project/',
+    projectImageUrl: 'img/blackjack-tn.png',
+    projectDescription: 'BlackJack card game using HTML, CSS and JavaScript only.'
+  },
+  {
+    projectName: 'Project 3',
+    projectUrl: '#',
+    projectImageUrl: 'http://placehold.it/300x300',
+    projectDescription: 'Project coming soon.'
+  },
+];
 
-// function Project (projectName, projectUrl, projectImageUrl, projectDescription) {
-//   this.projectName = projectName;
-//   this.projectUrl = projectUrl;
-//   this.projectImageUrl = projectImageUrl;
-//   this.projectDescription = projectDescription;
-// }
+  var projectSource = $('#project-template').html();
+  var handleBarsTemplate = Handlebars.compile(projectSource);
 
-var project1 = {
-  projectName: 'Salmon Cookies',
-  projectUrl: 'https://pmendoza72.github.io/cookie-stand/',
-  projectImageUrl: 'img/salmon-cookie-tn.png',
-  projectDescription: 'HTML table dynamically populated using JavaScript including form that adds to table.'
-};
-
-var project2 = {
-  projectName: 'BlackJack',
-  projectUrl: 'https://pmendoza72.github.io/201-Project/',
-  projectImageUrl: 'img/blackjack-tn.png',
-  projectDescription: 'BlackJack card game using HTML, CSS and JavaScript only.'
-};
-
-var project3 = {
-  projectName: 'Project 3',
-  projectUrl: '#',
-  projectImageUrl: 'http://placehold.it/300x300',
-  projectDescription: 'Coming soon.'
-};
-
-// $("#insert-projects").
-
-// Project.prototype.toHtml = function() {
-//   var template = Handlebars.compile($('#project-template').text());
-//   return template(this);
-// };
-
-var sourceHtml = $('#project-template').text();
-var handleBarsTemplate = Handlebars.compile(sourceHtml);
-
-var finalHtml = handleBarsTemplate(project1);
-$('#insert-projects').append(finalHtml);
-$('#insert-projects').append(handleBarsTemplate(project2));
-$('#insert-projects').append(handleBarsTemplate(project3));
+  for (var i in projects) {
+      var showProjects = handleBarsTemplate(projects[i]);
+      $('#insert-projects').append(showProjects);
+  };
