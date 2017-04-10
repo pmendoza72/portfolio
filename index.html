@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
   <meta charset="utf-8">
   <title>Pablo's Portfolio</title>
   <link rel="stylesheet" href="styles/icons.css">
@@ -9,72 +9,51 @@
   <link rel="stylesheet" href="styles/modules.css">
   <link rel="stylesheet" href="styles/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <script type="text/x-handlebars-template"  id="project-template">
+  {{#each projects}}
     <section><a href="{{projectUrl}}"><h3>{{projectName}}</h3>
       <img src="{{projectImageUrl}}" alt="{{projectName}}"></a>
       <p>{{projectDescription}}</p>
     </section>
+	{{/each}}
   </script>
-
-</head>
-<body>
-
-  <div class="wrapper">
+  </head>
+  <body>
+<div class="wrapper">
     <nav>
-      <div>PABLO MENDOZA</div>
-      <div class="menu">
+    <div>PABLO MENDOZA</div>
+    <div class="menu">
         <ul>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="https://github.com/pmendoza72">GITHUB</a></li>
-          <li><a href="#about">ABOUT</a></li>
-        </ul>
+        <li><a class="portfolio-item" data-portfolio="portfolio-projects" href="#">PROJECTS</a></li>
+        <li><a class="portfolio-item" data-portfolio="portfolio-about" href="#">ABOUT</a></li>
+        <li><a href="https://github.com/pmendoza72">GITHUB</a></li>
+      </ul>
+      <button class="hamburger">&#9776;</button>
+  	  <button class="cross">&#735;</button>
       </div>
-      <span class="icon-menu"></span>
+    <span class="icon-menu"></span>
     </nav>
     <header><img src="http://placehold.it/1100x400" alt="Project 1"></header>
-    <a name="projects"></a>
+    <main>
     <h2>Projects</h2>
-    <main id="insert-projects">
-
-
-
-    </main>
-    <h2>Skills</h2>
+    <article id="insert-projects"> </article>
+  </main>
     <main>
-      <section>
-        <ul>
-          <li>JavaScript</li>
-          <li>jQuery</li>
-          <li>CSS</li>
-          <li>HTML</li>
-        </ul>
-      </section>
-      <section>
-        <ul>
-          <li>JavaScript</li>
-          <li>jQuery</li>
-          <li>CSS</li>
-          <li>HTML</li>
-        </ul>
-      </section>
-    </main>
-    <a name="about"></a>
     <h2>About</h2>
-    <main>
-      <p>Man, we steppin' out like whoa worst birthday ever worst birthday ever. And all the haters I swear they look so small from up here if I was your boyfriend, I'd never let you go don't be so cold, we could be fire. Let the music blast we gon' do our dance if I was your boyfriend, I'd never let you go canada. Swaggie let the music blast we gon' do our dance swag swag swag, on you, chillin by the fire while we eaten' fondue. Man, we steppin' out like whoa I like The Notebook canada. Don't be so cold, we could be fire worst birthday ever no matter how much I try, I can't figure out how to not be adorable. Baby know for sho', I'll never let you go and all the haters I swear they look so small from up here when I met you girl my heart went knock knock. Swag swag swag, on you, chillin by the fire while we eaten' fondue if I was your boyfriend, I'd never let you go if I was your boyfriend, I'd never let you go.
-      </p>
-    </main>
+    <article>
+        <p>Man, we steppin' out like whoa worst birthday ever worst birthday ever. And all the haters I swear they look so small from up here if I was your boyfriend, I'd never let you go don't be so cold, we could be fire. Let the music blast we gon' do our dance if I was your boyfriend, I'd never let you go canada. Swaggie let the music blast we gon' do our dance swag swag swag, on you, chillin by the fire while we eaten' fondue. Man, we steppin' out like whoa I like The Notebook canada. Don't be so cold, we could be fire worst birthday ever no matter how much I try, I can't figure out how to not be adorable. Baby know for sho', I'll never let you go and all the haters I swear they look so small from up here when I met you girl my heart went knock knock. Swag swag swag, on you, chillin by the fire while we eaten' fondue if I was your boyfriend, I'd never let you go if I was your boyfriend, I'd never let you go. </p>
+      </article>
+  </main>
     <footer>
-      <div></div>
-      <div>Pablo Mendoza</div>
-      <div></div>
-    </footer>
+    <div></div>
+    <div>Pablo Mendoza</div>
+    <div></div>
+  </footer>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v4.0.5.js"></script>
-  <script type="text/javascript" src="scripts/app.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+<script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v4.0.5.js"></script> 
+<script type="text/javascript" src="scripts/data.js"></script> 
+<script type="text/javascript" src="scripts/app.js"></script> 
 </script>
 </body>
 </html>
