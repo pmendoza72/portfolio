@@ -22,7 +22,7 @@
 }
 
 /* REVIEW: Add styles so the filters lay out better on desktop. */
-@media only screen and (min-width: 640px) {
+/*@media only screen and (min-width: 640px) {
   .heading-group-h1 {
     padding: .1em .1em .1em 2em;
     float: none;
@@ -37,4 +37,4 @@
     width: 20em;
     display: inline;
   }
-}
+}*/
