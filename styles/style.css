@@ -26,25 +26,25 @@ div {
   font-size: 1em;
 }
 
-header {
+nav {
   display: flex;
-  flex-direction: column;
-  font-size: 18px;
+  flex-direction: row;
+  font-size: inherit;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   align-items: center;
-  padding: 40px;
+  /*padding: 40px;
   border-bottom: 3px solid #432F21;
-  margin-bottom: 40px;
+  margin-bottom: 40px;*/
 }
 
-nav {
+header {
   background: #2f2e2f;
   color: #fff;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   align-items: center;
@@ -63,13 +63,13 @@ nav a, nav a:link {
 }
 
 nav a:hover {
-  /*color: #cf3328;*/
+  color: #cf3328;
 }
 
 main {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
   align-items: flex-start;
@@ -133,17 +133,17 @@ li {
   font-size: 1.3em;
 }
 
-/*@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
   .menu {
     display: none;
   }
-}*/
+}
 
-/*@media screen and (min-width: 640px) {
+@media screen and (min-width: 640px) {
   .icon-menu {
     display: none;
   }
-}*/
+}
 
 #insert-projects p {
   margin-top: 20px;
