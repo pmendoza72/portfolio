@@ -1,37 +1,135 @@
-/* TODO: Add a rule for images, so they never exceed their container's width. */
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+a:hover {
+  cursor: pointer;
+}
 
 body {
-  line-height: 1.5;
-  font-size: 100%;
-  color: #313131;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-hr {
-  margin: 1em;
-  width: 80%;
+
+img {
+  width: 100%;
 }
 
-/*TEXT STYLES
-=======================================*/
-p {
+div {
   font-size: 1em;
 }
 
-address {
-  display: inline-block;
+nav {
 }
 
-/*LINK STYLES
-=======================================*/
+header {
+  background: #2f2e2f;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.5em;
+  height: 40px;
+}
 
-a, a:link, a:active {
+
+nav li {
+  display: inline;
+  font-size: 1em;
+}
+
+nav a, nav a:link {
+  color: #fff;
   text-decoration: none;
-  color: #777;
 }
 
-a:hover, a:focus {
-  color: #29506D;
+nav a:hover {
+  color: #cf3328;
 }
 
-a:visited {
+main {
+  margin: 30px 20px;
+}
+
+section {
+  padding: 30px 0;
+}
+
+
+.format-projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: flex-start;
+}
+
+article {
+
+}
+
+.format-article {
+  border: 3px solid #432F21;
+  padding: 20px;
+  width: 300px;
+  margin: 15px;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #432F21;
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  height: 90px;
+  margin-top: 50px;
+}
+
+h2,  h3, h4 {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+ul {
+  list-style: disc;
+  margin: 30px;
+}
+
+li {
+  margin-left: 15px;
+  line-height: 1.5em;
+  font-size: 1.3em;
 }
