@@ -1,4 +1,4 @@
-// This is the default context, which is passed to the template
+
   var context = {
     projects: [
       {
